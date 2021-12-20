@@ -1,0 +1,13 @@
+Image=imread('filename')
+Image_brightness = Image + 30; (to increase the brightness by a factor of 30)
+Image_brightness = Image – 30; (to decrease the brightness by a factor of 30)
+figure, imshow (Image_brightness)
+
+neg_trans_image = 256-Image;
+figure, imshow (neg_trans_image);
+
+gray_image=rgb2gray(Image);
+low_contrast=gray_image*.20;
+figure, imshow(low_contrast);
+high_contrast=b*5;
+figure, imshow(high_contrast)
